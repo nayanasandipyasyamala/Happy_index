@@ -1,0 +1,5 @@
+# ignore Python virtual environments
+ModelML/.venv_ml/
+ModelML/.venv_ml/**
+# node_modules (if not already)
+node_modules/
