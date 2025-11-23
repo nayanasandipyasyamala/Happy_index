@@ -1,5 +1,38 @@
-# ignore Python virtual environments
+# Node modules (React frontend)
+frontend/node_modules/
+frontend/dist/
+
+# Backend dependencies
+backend/node_modules/
+
+# Python virtual environments
 ModelML/.venv_ml/
-ModelML/.venv_ml/**
-# node_modules (if not already)
-node_modules/
+ModelML/.venv2/
+.venv/
+.venv_ml/
+
+# Python cache
+__pycache__/
+ModelML/__pycache__/
+
+# Environment variables
+*.env
+.env
+
+# Logs
+*.log
+
+# Model files (optional to include or exclude)
+ModelML/models/*.pkl
+
+# Large datasets – keep locally only
+ModelML/*.csv
+ModelML/data/
+!ModelML/example_small.csv
+
+# VS Code
+.vscode/
+
+# OS files
+Thumbs.db
+.DS_Store
