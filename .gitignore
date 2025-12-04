@@ -1,38 +1,146 @@
-# Node modules (React frontend)
-frontend/node_modules/
-frontend/dist/
+# -------------------------
+# Node / Frontend
+# -------------------------
+# Node modules & build output
+/frontend/node_modules/
+/frontend/dist/
+/backend/node_modules/
 
-# Backend dependencies
-backend/node_modules/
+# npm / package lock (you may want to keep package-lock in repo, so comment out if needed)
+# /frontend/package-lock.json
 
-# Python virtual environments
-ModelML/.venv_ml/
-ModelML/.venv2/
-.venv/
-.venv_ml/
+# Vite / local env
+/frontend/.env.local
+/frontend/.env
 
-# Python cache
-__pycache__/
-ModelML/__pycache__/
+# -------------------------
+# Python / ModelML
+# -------------------------
+# python virtual env
+/ModelML/.venv_ml/
+/ModelML/__pycache__/
+/__pycache__/
+/*.pyc
+/*.pyo
 
-# Environment variables
-*.env
-.env
+# Jupyter checkpoints (if any)
+/.ipynb_checkpoints/
 
-# Logs
+# Models and large binaries (do NOT commit trained models)
+# keep model artifacts local or use an artifact store
+/ModelML/models/*.pkl
+/ModelML/models/*.h5
+/ModelML/models/*.joblib
+/ModelML/models/confusion_matrix.png
+
+# Large datasets (keep locally only)
+# Allow example_small.csv as small example; ignore big CSVs
+/ModelML/*.csv
+!/ModelML/example_small.csv
+/ModelML/data/
+/ModelML/data/**
+
+# If using Git LFS, you may list files tracked by LFS here instead of ignoring
+# *.zip
+# *.pt
+
+# -------------------------
+# Backend (Node) / runtime
+# -------------------------
+/backend/node_modules/
+/backend/.env
+/backend/.env.local
+/backend/.env.*.local
+
+# Logs, OS files
 *.log
-
-# Model files (optional to include or exclude)
-ModelML/models/*.pkl
-
-# Large datasets – keep locally only
-ModelML/*.csv
-ModelML/data/
-!ModelML/example_small.csv
-
-# VS Code
-.vscode/
-
-# OS files
-Thumbs.db
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 .DS_Store
+Thumbs.db
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Misc
+*.bak
+*.swp
+# -------------------------
+# Node / Frontend
+# -------------------------
+# Node modules & build output
+/frontend/node_modules/
+/frontend/dist/
+/backend/node_modules/
+
+# npm / package lock (you may want to keep package-lock in repo, so comment out if needed)
+# /frontend/package-lock.json
+
+# Vite / local env
+/frontend/.env.local
+/frontend/.env
+
+# -------------------------
+# Python / ModelML
+# -------------------------
+# python virtual env
+/ModelML/.venv_ml/
+/ModelML/__pycache__/
+/__pycache__/
+/*.pyc
+/*.pyo
+
+# Jupyter checkpoints (if any)
+/.ipynb_checkpoints/
+
+# Models and large binaries (do NOT commit trained models)
+# keep model artifacts local or use an artifact store
+/ModelML/models/*.pkl
+/ModelML/models/*.h5
+/ModelML/models/*.joblib
+/ModelML/models/confusion_matrix.png
+
+# Large datasets (keep locally only)
+# Allow example_small.csv as small example; ignore big CSVs
+/ModelML/*.csv
+!/ModelML/example_small.csv
+/ModelML/data/
+/ModelML/data/**
+
+# If using Git LFS, you may list files tracked by LFS here instead of ignoring
+# *.zip
+# *.pt
+
+# -------------------------
+# Backend (Node) / runtime
+# -------------------------
+/backend/node_modules/
+/backend/.env
+/backend/.env.local
+/backend/.env.*.local
+
+# Logs, OS files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.DS_Store
+Thumbs.db
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Misc
+*.bak
+*.swp

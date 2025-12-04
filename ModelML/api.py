@@ -11,7 +11,7 @@ CORS(app)
 
 BASE_DIR = os.path.dirname(__file__)
 MODEL_DIR = os.path.join(BASE_DIR, "models")
-MODEL_PATH = os.path.join(MODEL_DIR, "sentiment_model.pkl")
+MODEL_PATH = os.path.join(MODEL_DIR, "svm_model.pkl")
 VECT_PATH = os.path.join(MODEL_DIR, "tfidf_vectorizer.pkl")
 
 model = None
