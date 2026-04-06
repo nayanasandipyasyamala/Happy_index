@@ -1,6 +1,6 @@
 # College Feedback Sentiment Analysis System
 
-## Project Overview
+## 📌 Project Overview
 
 The College Feedback Sentiment Analysis System is designed to analyze anonymous student feedback about various college facilities such as canteen food, hostel life, events, transport, and academics.
 
@@ -8,21 +8,23 @@ The system classifies feedback into:
 - Positive  
 - Negative  
 - Neutral  
+
 It also provides visual insights using graphs to represent overall satisfaction trends.
 
 ---
-## Project Structure
+
+## 📂 Project Structure
 
 The project is divided into two main stages:
 
 ---
 
-### Stage 1: Machine Learning Model Development
+### 🧠 Stage 1: Machine Learning Model Development
 
-#### Objective
+#### 🎯 Objective
 To build and evaluate sentiment classification models using a synthetic dataset.
 
-#### Process
+#### ⚙️ Process
 - Data preprocessing (cleaning, tokenization, stopword removal)
 - Feature extraction using TF-IDF Vectorization
 - Model training using:
@@ -35,22 +37,22 @@ To build and evaluate sentiment classification models using a synthetic dataset.
   - Confusion Matrix
 - Visualization of model performance
 
-#### Scripts
+#### 📜 Scripts
 - `train.py` for training the model  
 - `predict.py` for testing predictions  
 - `visualize.py` for generating graphs  
 
-#### Note
+#### 📝 Note
 This stage is completely offline and does not require frontend or database integration.
 
 ---
 
-### Stage 2: System Integration and Deployment
+### 🚀 Stage 2: System Integration and Deployment
 
-#### Objective
+#### 🎯 Objective
 To integrate the trained model into a real-time web application.
 
-#### Workflow
+#### 🔄 Workflow
 1. User submits feedback through the website  
 2. Backend processes the input  
 3. Text is preprocessed and vectorized  
@@ -58,44 +60,44 @@ To integrate the trained model into a real-time web application.
 5. Prediction is stored in MongoDB  
 6. Graphs are updated dynamically  
 
-#### Backend Behavior
+#### ⚙️ Backend Behavior
 - The trained model is loaded once when the server starts  
 - All predictions happen automatically without manual script execution  
 
 ---
 
-## Data Processing Methods
+## ⚙️ Data Processing Methods
 
-### Real-Time Processing
+### ⏱️ Real-Time Processing
 Each feedback is processed instantly as soon as it is received.
 
-### Batch Processing
+### 📦 Batch Processing
 Feedback is collected over a short interval and processed together to reduce system load.
 
-### Hybrid Approach
+### 🔄 Hybrid Approach
 Combines real-time prediction with periodic graph updates.
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-### Machine Learning
+### 🤖 Machine Learning
 - Python  
 - Scikit-learn  
 - TF-IDF Vectorizer  
 
-### Backend
+### 🖥️ Backend
 - Python using Flask or FastAPI  
 
-### Database
+### 🗄️ Database
 - MongoDB  
 
-### Frontend
+### 🎨 Frontend
 - Lovable  
 
 ---
 
-## Evaluation Metrics
+## 📊 Evaluation Metrics
 
 - Accuracy  
 - Precision  
@@ -104,14 +106,14 @@ Combines real-time prediction with periodic graph updates.
 
 ---
 
-## Output
+## 📈 Output
 
 - Sentiment classification into Positive, Negative, or Neutral  
 - Graphical visualization of feedback trends  
 
 ---
 
-## Key Features
+## ⭐ Key Features
 
 - Anonymous feedback collection  
 - Automated sentiment classification  
@@ -121,7 +123,7 @@ Combines real-time prediction with periodic graph updates.
 
 ---
 
-## Future Enhancements
+## 🔮 Future Enhancements
 
 - Use real-world datasets instead of synthetic data  
 - Implement deep learning models such as LSTM or BERT  
@@ -131,10 +133,9 @@ Combines real-time prediction with periodic graph updates.
 
 ---
 
-## Conclusion
+## 📌 Conclusion
 
 Stage 1 focuses on building and selecting the best machine learning model.  
 Stage 2 focuses on integrating the model into a real-time system.  
 
 The machine learning pipeline remains the same, while only the input and output flow changes during deployment.
-
