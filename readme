@@ -1,109 +1,124 @@
-College Feedback Sentiment Analysis System
-Project Overview:
+# College Feedback Sentiment Analysis System  
 
-This project is a Sentiment Analysis System that analyzes anonymous student feedback about college facilities such as canteen food, hostel life, events, transport, and academics.
+## Project Overview  
+This project is a Sentiment Analysis System that analyzes anonymous student feedback about college facilities such as canteen food, hostel life, events, transport, and academics.  
 
-The system classifies feedback into Positive, Negative, or Neutral and provides visual insights using graphs to represent overall satisfaction trends.
+The system classifies feedback into **Positive, Negative, or Neutral** and provides visual insights using graphs to represent overall satisfaction trends.  
 
-Project Structure
+---
 
-The project is divided into two main stages:
+## Project Structure  
 
-Stage 1: Machine Learning Model Development
+The project is divided into two main stages:  
 
-Objective
-To build and evaluate sentiment classification models using a synthetic dataset.
+---
 
-Process
-Data preprocessing including cleaning, tokenization, and stopword removal
-Feature extraction using TF-IDF Vectorization
-Training models using Naive Bayes and Support Vector Machine (SVM)
-Evaluating models using accuracy, confusion matrix, precision, and recall
-Visualizing results for comparison
+## Stage 1: Machine Learning Model Development  
 
-Scripts
-train.py for training the model
-predict.py for testing predictions
-visualize.py for generating graphs
+### Objective  
+To build and evaluate sentiment classification models using a synthetic dataset.  
 
-Note
-This stage is completely offline and does not require any frontend or database integration.
+### Process  
+- Data preprocessing including cleaning, tokenization, and stopword removal  
+- Feature extraction using **TF-IDF Vectorization**  
+- Training models using **Naive Bayes** and **Support Vector Machine (SVM)**  
+- Evaluating models using accuracy, confusion matrix, precision, and recall  
+- Visualizing results for comparison  
 
-Stage 2: System Integration and Deployment
+### Scripts  
+- train.py for training the model  
+- predict.py for testing predictions  
+- visualize.py for generating graphs  
 
-Objective
-To integrate the trained model into a real-time web application.
+### Note  
+This stage is completely offline and does not require any frontend or database integration.  
 
-Workflow
-User submits feedback through the website
-Backend processes the input
-Text is preprocessed and vectorized
-Model predicts the sentiment
-Prediction is stored in MongoDB
-Graphs are updated dynamically
+---
 
-Backend Behavior
-The trained model is loaded once when the server starts
-All predictions happen automatically without manual script execution
+## Stage 2: System Integration and Deployment  
 
-Data Processing Methods
+### Objective  
+To integrate the trained model into a real-time web application.  
 
-Real-Time Processing
-Each feedback is processed instantly as soon as it is received
+### Workflow  
+- User submits feedback through the website  
+- Backend processes the input  
+- Text is preprocessed and vectorized  
+- Model predicts the sentiment  
+- Prediction is stored in **MongoDB**  
+- Graphs are updated dynamically  
 
-Batch Processing
-Feedback is collected over a short interval and processed together to reduce system load
+### Backend Behavior  
+- The trained model is loaded once when the server starts  
+- All predictions happen automatically without manual script execution  
 
-Hybrid Approach
-Combines real-time prediction with periodic graph updates
+---
 
-Tech Stack
+## Data Processing Methods  
 
-Machine Learning
-Python
-Scikit-learn
-TF-IDF Vectorizer
+### Real-Time Processing  
+Each feedback is processed instantly as soon as it is received  
 
-Backend
-Python using Flask or FastAPI
+### Batch Processing  
+Feedback is collected over a short interval and processed together to reduce system load  
 
-Database
-MongoDB
+### Hybrid Approach  
+Combines real-time prediction with periodic graph updates  
 
-Frontend
-Lovable
+---
 
-Evaluation Metrics
+## Tech Stack  
 
-Accuracy
-Precision
-Recall
-Confusion Matrix
+### Machine Learning  
+- Python  
+- Scikit-learn  
+- TF-IDF Vectorizer  
 
-Output
+### Backend  
+- Python using **Flask** or **FastAPI**  
 
-Sentiment classification into Positive, Negative, or Neutral
-Graphical visualization of feedback trends
+### Database  
+- MongoDB  
 
-Key Features
+### Frontend  
+- Lovable  
 
-Anonymous feedback collection
-Automated sentiment classification
-Support for real-time and batch processing
-Insightful data visualization
-Scalable backend design
+---
 
-Future Enhancements
+## Evaluation Metrics  
+- Accuracy  
+- Precision  
+- Recall  
+- Confusion Matrix  
 
-Use real-world datasets instead of synthetic data
-Implement deep learning models such as LSTM or BERT
-Enhance user interface and dashboard
-Add category-wise sentiment analysis
-Deploy the system on cloud platforms like AWS, Azure, or GCP
+---
 
-Conclusion
+## Output  
+- Sentiment classification into **Positive, Negative, or Neutral**  
+- Graphical visualization of feedback trends  
 
-Stage 1 focuses on building and selecting the best machine learning model
-Stage 2 focuses on integrating the model into a real-time system
+---
 
-The machine learning pipeline remains the same, while only the input and output flow changes during deployment
+## Key Features  
+- Anonymous feedback collection  
+- Automated sentiment classification  
+- Support for real-time and batch processing  
+- Insightful data visualization  
+- Scalable backend design  
+
+---
+
+## Future Enhancements  
+- Use real-world datasets instead of synthetic data  
+- Implement deep learning models such as LSTM or BERT  
+- Enhance user interface and dashboard  
+- Add category-wise sentiment analysis  
+- Deploy on cloud platforms like AWS, Azure, or GCP  
+
+---
+
+## Conclusion  
+**Stage 1** focuses on building and selecting the best machine learning model  
+**Stage 2** focuses on integrating the model into a real-time system  
+
+The machine learning pipeline remains the same, while only the input and output flow changes during deployment  
