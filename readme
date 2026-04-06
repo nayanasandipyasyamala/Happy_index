@@ -140,8 +140,3 @@ Stage 2 focuses on integrating the model into a real-time system.
 
 The machine learning pipeline remains the same, while only the input and output flow changes during deployment.
 
----
-
-## Author
-
-Asha
